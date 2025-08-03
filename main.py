@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Main entry point for NoetherBot."""
+"""Main entry point for LPHedgeBot."""
 
 import asyncio
 import signal
@@ -15,13 +15,13 @@ from strategy_engine import StrategyEngine
 from swap_monitor import SwapMonitor
 
 
-class NoetherBot:
+class LPHedgeBot:
     """Main bot orchestrator."""
 
     def __init__(self):
         """Initialize the bot."""
         self.logger = LoggerManager()
-        self.logger.setup_logger(log_file="noether_bot.log")
+        self.logger.setup_logger(log_file="lphedgebot.log")
 
         # Initialize components
         self.config_manager = ConfigManager()
@@ -53,7 +53,7 @@ class NoetherBot:
     async def start(self):
         """Start the bot."""
         try:
-            self.logger.log_info("Starting NoetherBot...", LogTag.INFO)
+            self.logger.log_info("Starting LPHedgeBot...", LogTag.INFO)
 
             # Connect to exchange
             await self.exchange.connect()
@@ -69,7 +69,7 @@ class NoetherBot:
             )
 
             self._running = True
-            self.logger.log_info("NoetherBot started successfully", LogTag.INFO)
+            self.logger.log_info("LPHedgeBot started successfully", LogTag.INFO)
 
             # Keep running
             while self._running:
@@ -86,7 +86,7 @@ class NoetherBot:
 
     async def stop(self):
         """Stop the bot."""
-        self.logger.log_info("Stopping NoetherBot...", LogTag.INFO)
+        self.logger.log_info("Stopping LPHedgeBot...", LogTag.INFO)
 
         self._running = False
 
@@ -100,7 +100,7 @@ class NoetherBot:
         stats = self.strategy_engine.get_strategy_stats()
         self.logger.log_info(f"Final stats: {stats}", LogTag.INFO)
 
-        self.logger.log_info("NoetherBot stopped", LogTag.INFO)
+        self.logger.log_info("LPHedgeBot stopped", LogTag.INFO)
 
     def handle_signal(self, signum, frame):
         """Handle shutdown signals."""
@@ -111,7 +111,7 @@ class NoetherBot:
 
 async def main():
     """Main function."""
-    bot = NoetherBot()
+    bot = LPHedgeBot()
 
     # Set up signal handlers
     signal.signal(signal.SIGINT, bot.handle_signal)

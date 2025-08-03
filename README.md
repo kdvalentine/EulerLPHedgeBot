@@ -1,11 +1,11 @@
-# NoetherBot - Automated Delta-Neutral Hedging for EulerSwap
+# LPHedgeBot - Automated Delta-Neutral Hedging for EulerSwap
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
 
-A production-ready Python framework for automated delta-neutral strategies on EulerSwap JIT liquidity pools. NoetherBot continuously monitors on-chain pool reserves and automatically hedges ETH exposure through perpetual futures, enabling liquidity providers to earn yields while maintaining market neutrality.
+A production-ready Python framework for automated delta-neutral strategies on EulerSwap JIT liquidity pools. LPHedgeBot continuously monitors on-chain pool reserves and automatically hedges ETH exposure through perpetual futures, enabling liquidity providers to earn yields while maintaining market neutrality.
 
 ## 🏗️ Architecture
 
@@ -16,7 +16,7 @@ graph TB
         RPC[Ethereum RPC]
     end
     
-    subgraph NoetherBot
+    subgraph LPHedgeBot
         SM[SwapMonitor] --> SE[StrategyEngine]
         SE --> RM[RiskManager]
         SE --> EM[ExchangeManager]
@@ -73,7 +73,7 @@ graph TB
 
 ```bash
 git clone https://github.com/yourusername/noether-bot.git
-cd noether-bot
+cd lphedgebot
 ```
 
 ### 2. Install Dependencies
@@ -145,10 +145,10 @@ PYTHONPATH=. poetry run python main.py
 
 ```bash
 # Build the image
-docker build -t noether-bot .
+docker build -t lphedgebot .
 
 # Run with environment file
-docker run --env-file .env -it noether-bot
+docker run --env-file .env -it lphedgebot
 ```
 
 ### Docker Compose
@@ -231,7 +231,7 @@ The Terminal UI provides real-time monitoring and control:
 ## 📁 Project Structure
 
 ```
-noether-bot/
+lphedgebot/
 ├── abi/                    # Contract ABIs
 ├── config_manager/         # Configuration management
 ├── database_manager/       # SQLite persistence
@@ -289,4 +289,4 @@ This software is for educational purposes only. Trading cryptocurrencies carries
 - EulerSwap team for the innovative JIT liquidity system
 - CCXT library for exchange integrations
 - Textual framework for the beautiful TUI
-- Emmy Noether for the mathematical inspiration
+- The DeFi community for continuous innovation

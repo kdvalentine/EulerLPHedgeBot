@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Connection test script for NoetherBot.
+Connection test script for LPHedgeBot.
 
 Tests all external connections:
 1. Infura RPC connection
@@ -367,7 +367,7 @@ class ConnectionTester:
         try:
             from database_manager import DatabaseManager
 
-            db_url = os.getenv("DATABASE_URL", "sqlite:///noether_bot_test.db")
+            db_url = os.getenv("DATABASE_URL", "sqlite:///lphedgebot_test.db")
             db = DatabaseManager(db_url)
 
             # Test by creating a sample snapshot
@@ -491,7 +491,7 @@ class ConnectionTester:
         """Run all connection tests."""
         console.print(
             Panel.fit(
-                "[bold cyan]NoetherBot Connection Test[/bold cyan]\n"
+                "[bold cyan]LPHedgeBot Connection Test[/bold cyan]\n"
                 "Testing all external connections...",
                 border_style="cyan",
             )

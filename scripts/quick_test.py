@@ -152,7 +152,7 @@ def check_config():
 def main():
     """Main entry point."""
     print("\n" + "=" * 50)
-    print("NoetherBot Quick Connection Test")
+    print("LPHedgeBot Quick Connection Test")
     print("=" * 50)
 
     # Check .env exists

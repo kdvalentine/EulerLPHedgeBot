@@ -33,7 +33,7 @@
   "database": {
     "status": "\u2705 Working",
     "type": "SQLite",
-    "url": "sqlite:/noether_bot_mainnet.db",
+    "url": "sqlite:/lphedgebot_mainnet.db",
     "test_write": "Success",
     "test_read": "Success"
   }

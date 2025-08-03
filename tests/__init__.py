@@ -1,1 +1,1 @@
-"""Test suite for NoetherBot."""
+"""Test suite for LPHedgeBot."""

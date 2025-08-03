@@ -1,4 +1,4 @@
-"""Logger management for NoetherBot."""
+"""Logger management for LPHedgeBot."""
 
 from .logger_manager import LoggerManager, LogEntry, LogTag
 

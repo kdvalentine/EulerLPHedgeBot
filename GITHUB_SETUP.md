@@ -12,7 +12,7 @@
 ### 1. Create GitHub Repository
 
 Go to [GitHub](https://github.com/new) and create a new repository:
-- **Repository name**: `noetherbot` (or your preferred name)
+- **Repository name**: `lphedgebot` (or your preferred name)
 - **Description**: "Automated delta-neutral hedging for EulerSwap JIT liquidity pools"
 - **Public/Private**: Your choice
 - **DO NOT** initialize with README, .gitignore, or license (we already have them)
@@ -23,10 +23,10 @@ After creating the empty repository on GitHub, run these commands:
 
 ```bash
 # Add your GitHub repository as origin
-git remote add origin https://github.com/YOUR_USERNAME/noetherbot.git
+git remote add origin https://github.com/YOUR_USERNAME/lphedgebot.git
 
 # Or if using SSH
-git remote add origin git@github.com:YOUR_USERNAME/noetherbot.git
+git remote add origin git@github.com:YOUR_USERNAME/lphedgebot.git
 
 # Push the code
 git push -u origin main
@@ -45,7 +45,7 @@ If you want to use GitHub Actions for CI/CD, add these secrets in your repositor
 ## Repository Structure
 
 ```
-noetherbot/
+lphedgebot/
 ├── .github/workflows/    # CI/CD pipelines
 ├── abi/                  # Contract ABIs
 ├── config/               # Configuration files
@@ -92,10 +92,10 @@ noetherbot/
 Add these to your README.md:
 
 ```markdown
-![GitHub release](https://img.shields.io/github/v/release/YOUR_USERNAME/noetherbot)
-![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/noetherbot)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/YOUR_USERNAME/noetherbot)
-![GitHub](https://img.shields.io/github/license/YOUR_USERNAME/noetherbot)
+![GitHub release](https://img.shields.io/github/v/release/YOUR_USERNAME/lphedgebot)
+![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/lphedgebot)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/YOUR_USERNAME/lphedgebot)
+![GitHub](https://img.shields.io/github/license/YOUR_USERNAME/lphedgebot)
 ```
 
 ## Security Recommendations
@@ -126,7 +126,7 @@ The repository includes a GitHub Actions workflow that:
 Create a `CONTRIBUTING.md` file with:
 
 ```markdown
-# Contributing to NoetherBot
+# Contributing to LPHedgeBot
 
 ## Development Setup
 1. Fork the repository

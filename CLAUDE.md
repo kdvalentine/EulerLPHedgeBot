@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-NoetherBot is a Python framework for automated delta-neutral strategies on EulerSwap, specifically designed for USDT/WETH pools. The bot monitors pool reserves, tracks off-chain short positions, calculates delta exposure, and automatically executes hedge trades to maintain delta neutrality.
+LPHedgeBot is a Python framework for automated delta-neutral strategies on EulerSwap, specifically designed for USDT/WETH pools. The bot monitors pool reserves, tracks off-chain short positions, calculates delta exposure, and automatically executes hedge trades to maintain delta neutrality.
 
 ## EulerSwap Integration
 
@@ -52,7 +52,7 @@ The framework follows a modular architecture with clear separation of concerns:
 ## Project Structure
 
 ```
-noether-bot/
+lphedgebot/
 ├── abi/                  # Contract ABIs for EulerSwap
 ├── config/               # Configuration management
 ├── database_manager/     # Data persistence layer

@@ -18,7 +18,7 @@ load_dotenv()
 async def check_system():
     """Run comprehensive system check."""
     print("=" * 60)
-    print("NoetherBot System Check")
+    print("LPHedgeBot System Check")
     print("=" * 60)
     
     results = {}
@@ -121,7 +121,7 @@ async def check_system():
     print("\n💾 Database:")
     try:
         from database_manager import DatabaseManager
-        db = DatabaseManager("sqlite:///noether_bot.db")
+        db = DatabaseManager("sqlite:///lphedgebot.db")
         print(f"  ✅ SQLite initialized")
         results["database"] = True
     except Exception as e:
@@ -168,7 +168,7 @@ async def check_system():
 
 
 if __name__ == "__main__":
-    print("\nNoetherBot Final System Check")
+    print("\nLPHedgeBot Final System Check")
     print("Verifying all components...\n")
     
     result = asyncio.run(check_system())

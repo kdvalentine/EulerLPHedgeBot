@@ -1,4 +1,4 @@
-# NoetherBot Deployment Guide
+# LPHedgeBot Deployment Guide
 
 ## System Status: ✅ PRODUCTION READY
 
@@ -87,14 +87,14 @@ python scripts/final_check.py
 
 ```bash
 # Build image
-docker build -t noetherbot .
+docker build -t lphedgebot .
 
 # Run container
 docker run -d \
-  --name noetherbot \
+  --name lphedgebot \
   --env-file .env \
   -v $(pwd)/data:/app/data \
-  noetherbot
+  lphedgebot
 ```
 
 ## Risk Management
@@ -151,7 +151,7 @@ docker run -d \
 
 For issues or questions:
 1. Run `python scripts/final_check.py` for diagnostics
-2. Check `noether_bot.log` for detailed logs
+2. Check `lphedgebot.log` for detailed logs
 3. Review `CURRENT_STATUS.md` for latest updates
 
 ## Next Steps

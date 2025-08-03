@@ -1,7 +1,7 @@
-NoetherBot: Automating Delta Neutrality for EulerSwap
+LPHedgeBot: Automating Delta Neutrality for EulerSwap
 A sophisticated framework automating delta-neutral strategies for EulerSwap pool operators, combining on-chain liquidity provision with off-chain hedging to maximize yields while minimizing directional risk.
 
-The name NoetherBot is a tribute to Emmy Noether—a brilliant mathematician known for her groundbreaking work on connecting symmetries and conservation laws.
+The name LPHedgeBot reflects its core purpose: providing automated hedging for liquidity providers (LPs) to maintain delta-neutral positions.
 Fittingly, it also reads as "No Ether"—since the bot removes ETH exposure through delta-neutral hedging. 
 
 The Problem: Unhedged Price Risk in JIT Liquidity
@@ -9,8 +9,8 @@ EulerSwap's Just-In-Time (JIT) liquidity system offers an innovative approach to
 However, this mechanism introduces a critical challenge: price risk exposure on borrowed assets. When providing liquidity in these pools, LPs face impermanent loss (IL) if ETH price movements are unfavorable. Manual hedging of these positions is impractical and doesn't scale effectively for serious operators.
 The volatility of cryptocurrency markets makes this risk particularly acute, potentially erasing profits from swap fees and lending yields if positions remain unhedged. What liquidity providers need is an automated solution that can continuously monitor and adjust hedge positions in real-time.
 
-Introducing NoetherBot: Automated Risk Management
-NoetherBot is a modular, extensible Python framework designed to automate the entire risk management lifecycle for EulerSwap JIT pool operators. It ensures delta neutrality in real-time, allowing operators to focus on strategy rather than manual hedging.
+Introducing LPHedgeBot: Automated Risk Management
+LPHedgeBot is a modular, extensible Python framework designed to automate the entire risk management lifecycle for EulerSwap JIT pool operators. It ensures delta neutrality in real-time, allowing operators to focus on strategy rather than manual hedging.
 
 Monitors Reserves
 Continuously tracks on-chain reserves via RPC polling.
@@ -26,10 +26,10 @@ Allows Arbitrages
 Borrowing ETH has been historically much cheaper than shorting it on a CEX.
 
 Access a Triple Income Stream
-NoetherBot enables liquidity providers to maximize profits through multiple revenue sources simultaneously:
+LPHedgeBot enables liquidity providers to maximize profits through multiple revenue sources simultaneously:
 
-NoetherBot Architecture: A Python Framework
-NoetherBot is built as a robust Python framework, specifically optimized for automated delta-neutral strategies within EulerSwap's USDT/WETH pools. It continuously monitors pool status and hedges ETH exposure on centralized exchanges (CEX) to maintain perfect delta neutrality.
+LPHedgeBot Architecture: A Python Framework
+LPHedgeBot is built as a robust Python framework, specifically optimized for automated delta-neutral strategies within EulerSwap's USDT/WETH pools. It continuously monitors pool status and hedges ETH exposure on centralized exchanges (CEX) to maintain perfect delta neutrality.
 
 ┌──────────────────────┐    ┌─────────────────────┐    ┌────────────────────┐
 │     SwapMonitor      │───▶│   StrategyEngine    │───▶│    RiskManager     │
@@ -57,8 +57,8 @@ NoetherBot is built as a robust Python framework, specifically optimized for aut
 │ - Historical Access  │    │ - Pool Address Info│    │ - Time-stamped     │
 └──────────────────────┘    └────────────────────┘    └────────────────────┘
 
-NoetherBot Data Flow: A Feedback Loop
-NoetherBot operates on a sophisticated yet simple feedback loop, driven by live data from both on-chain EulerSwap pools and off-chain exchanges. This continuous cycle ensures precise and timely hedging.
+LPHedgeBot Data Flow: A Feedback Loop
+LPHedgeBot operates on a sophisticated yet simple feedback loop, driven by live data from both on-chain EulerSwap pools and off-chain exchanges. This continuous cycle ensures precise and timely hedging.
 
 1. Polling via RPC
 Fetches pool reserves (getReserves()) and Binance short positions.

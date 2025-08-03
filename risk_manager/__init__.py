@@ -1,4 +1,4 @@
-"""Risk management for NoetherBot."""
+"""Risk management for LPHedgeBot."""
 
 from .risk_manager import RiskManager
 

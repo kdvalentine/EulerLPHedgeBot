@@ -1,4 +1,4 @@
-"""Mainnet-specific configuration for NoetherBot."""
+"""Mainnet-specific configuration for LPHedgeBot."""
 
 import json
 import os
@@ -112,10 +112,10 @@ class MainnetConfig(Config):
             # Monitoring
             polling_interval_seconds=int(os.getenv("POLLING_INTERVAL_SECONDS", "5")),
             # Database
-            database_url=os.getenv("DATABASE_URL", "sqlite:///noether_bot_mainnet.db"),
+            database_url=os.getenv("DATABASE_URL", "sqlite:///lphedgebot_mainnet.db"),
             # Logging
             log_level=os.getenv("LOG_LEVEL", "INFO"),
-            log_file=os.getenv("LOG_FILE", "noether_bot_mainnet.log"),
+            log_file=os.getenv("LOG_FILE", "lphedgebot_mainnet.log"),
         )
 
     @classmethod

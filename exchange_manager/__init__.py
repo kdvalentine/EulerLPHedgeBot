@@ -1,4 +1,4 @@
-"""Exchange management for NoetherBot."""
+"""Exchange management for LPHedgeBot."""
 
 from .iexchange import IExchange
 from .binance_exchange import BinanceExchange

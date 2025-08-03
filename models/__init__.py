@@ -1,4 +1,4 @@
-"""Data models for NoetherBot."""
+"""Data models for LPHedgeBot."""
 
 from .position_snapshot import PositionSnapshot
 from .hedge_snapshot import HedgeSnapshot

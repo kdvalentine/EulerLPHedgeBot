@@ -1,4 +1,4 @@
-# NoetherBot Setup Status
+# LPHedgeBot Setup Status
 
 ## ✅ Successfully Configured
 

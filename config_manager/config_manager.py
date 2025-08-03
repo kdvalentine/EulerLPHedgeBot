@@ -37,11 +37,11 @@ class Config:
     retry_delay_seconds: int = 2
 
     # Database Configuration
-    database_url: str = "sqlite:///noether_bot.db"
+    database_url: str = "sqlite:///lphedgebot.db"
 
     # Logging Configuration
     log_level: str = "INFO"
-    log_file: str = "noether_bot.log"
+    log_file: str = "lphedgebot.log"
 
     # Trading Configuration
     symbol_perpetual: str = "ETH/USDT:USDT"
@@ -114,9 +114,9 @@ class ConfigManager:
                 ),
                 max_retries=int(os.getenv("MAX_RETRIES", "3")),
                 retry_delay_seconds=int(os.getenv("RETRY_DELAY_SECONDS", "2")),
-                database_url=os.getenv("DATABASE_URL", "sqlite:///noether_bot.db"),
+                database_url=os.getenv("DATABASE_URL", "sqlite:///lphedgebot.db"),
                 log_level=os.getenv("LOG_LEVEL", "INFO"),
-                log_file=os.getenv("LOG_FILE", "noether_bot.log"),
+                log_file=os.getenv("LOG_FILE", "lphedgebot.log"),
             )
 
             self.logger.info("Configuration loaded successfully")

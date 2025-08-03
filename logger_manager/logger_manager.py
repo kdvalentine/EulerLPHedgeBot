@@ -124,7 +124,7 @@ class LoggerManager:
             console_output: Whether to output to console
         """
         # Create logger
-        self.logger = logging.getLogger("noether_bot")
+        self.logger = logging.getLogger("lphedgebot")
         self.logger.setLevel(getattr(logging, log_level.upper()))
         self.logger.handlers.clear()
 

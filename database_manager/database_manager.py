@@ -22,7 +22,7 @@ class DatabaseManager:
     hedge operations, and trades.
     """
 
-    def __init__(self, database_url: str = "sqlite:///noether_bot.db"):
+    def __init__(self, database_url: str = "sqlite:///lphedgebot.db"):
         """
         Initialize the database manager.
 

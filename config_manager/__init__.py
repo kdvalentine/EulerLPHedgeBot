@@ -1,4 +1,4 @@
-"""Configuration management for NoetherBot."""
+"""Configuration management for LPHedgeBot."""
 
 from .config_manager import ConfigManager, Config
 

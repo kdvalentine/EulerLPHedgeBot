@@ -1,4 +1,4 @@
-"""Database management for NoetherBot."""
+"""Database management for LPHedgeBot."""
 
 from .database_manager import DatabaseManager
 from .models import Base

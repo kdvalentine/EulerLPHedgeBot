@@ -1,9 +1,9 @@
 ---
-title: NoEther Bot Technical Documentation
+title: LPHedgeBot Technical Documentation
 
 ---
 
-# NoEther Bot Technical Documentation
+# LPHedgeBot Technical Documentation
 
 ## Background
 
@@ -22,7 +22,7 @@ In this specific setup, the pool operator owns USDT and wants to:
 
 To enable this, the operator borrows WETH from EulerVault whenever a trader initiates a WETH-to-USDT swap. After the swap, the pool holds WETH—which exposes the operator to market risk. To neutralize this risk, the operator opens a short WETH position of equivalent size on an off-chain venue like Binance Perpetuals.
 
-Maintaining delta neutrality is crucial. Without it, price fluctuations in WETH can lead to impermanent loss or directional exposure the operator does not want. This is where NoETHerBot comes in. Additionally, NoETHerBot achieves another desirable arbitrage by leveraging the difference between the low cost of borrowing WETH (2.5% as of June 2025) and the higher yield from going short ETH (8.3%), further enhancing profitability and efficiency.
+Maintaining delta neutrality is crucial. Without it, price fluctuations in WETH can lead to impermanent loss or directional exposure the operator does not want. This is where LPHedgeBot comes in. Additionally, LPHedgeBot achieves another desirable arbitrage by leveraging the difference between the low cost of borrowing WETH (2.5% as of June 2025) and the higher yield from going short ETH (8.3%), further enhancing profitability and efficiency.
 
 ### Why This Bot
 
@@ -85,7 +85,7 @@ The frontend of this bot is a functional Terminal UI (TUI) which makes it very c
 ## Project Structure
 
 ```jsx
-noether-bot/
+lphedgebot/
 ├── abi/                           # Contract ABIs
 ├── config/                        # Configuration manager
 ├── database_manager/              # SQLite / DB interface

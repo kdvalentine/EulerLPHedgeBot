@@ -1,5 +1,10 @@
 # NoetherBot - Automated Delta-Neutral Hedging for EulerSwap
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
+
 A production-ready Python framework for automated delta-neutral strategies on EulerSwap JIT liquidity pools. NoetherBot continuously monitors on-chain pool reserves and automatically hedges ETH exposure through perpetual futures, enabling liquidity providers to earn yields while maintaining market neutrality.
 
 ## 🏗️ Architecture

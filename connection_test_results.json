@@ -1,0 +1,40 @@
+{
+  "infura": {
+    "status": "\u2705 Connected",
+    "chain_id": 1,
+    "block_number": "23,062,915",
+    "gas_price": "0.23 Gwei",
+    "syncing": "No",
+    "endpoint": "https://mainnet.infura.io/v3/***"
+  },
+  "eulerswap": {
+    "status": "\u274c Failed: ('Address has an invalid EIP-55 checksum. After looking up the address from the original source, try again.', '0x55DcF9455EEE8fD3F5eED17606291272cDe428a8')",
+    "error": "('Address has an invalid EIP-55 checksum. After looking up the address from the original source, try again.', '0x55DcF9455EEE8fD3F5eED17606291272cDe428a8')"
+  },
+  "binance": {
+    "status": "\u274c Failed: unsupported format string passed to NoneType.__format__",
+    "error": "unsupported format string passed to NoneType.__format__"
+  },
+  "tokens": {
+    "status": "\u2705 Verified",
+    "USDT": {
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "symbol": "USDT",
+      "decimals": 6,
+      "total_supply": "79,788,546,910"
+    },
+    "WETH": {
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "symbol": "WETH",
+      "decimals": 18,
+      "total_supply": "2,269,722"
+    }
+  },
+  "database": {
+    "status": "\u2705 Working",
+    "type": "SQLite",
+    "url": "sqlite:/noether_bot_mainnet.db",
+    "test_write": "Success",
+    "test_read": "Success"
+  }
+}

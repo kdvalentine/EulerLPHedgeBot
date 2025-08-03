@@ -1,0 +1,138 @@
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getReserves",
+    "outputs": [
+      {
+        "name": "reserve0",
+        "type": "uint112"
+      },
+      {
+        "name": "reserve1",
+        "type": "uint112"
+      },
+      {
+        "name": "status",
+        "type": "uint32"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getParams",
+    "outputs": [
+      {
+        "components": [
+          {"name": "vault0", "type": "address"},
+          {"name": "vault1", "type": "address"},
+          {"name": "eulerAccount", "type": "address"},
+          {"name": "equilibriumReserve0", "type": "uint112"},
+          {"name": "equilibriumReserve1", "type": "uint112"},
+          {"name": "priceX", "type": "uint256"},
+          {"name": "priceY", "type": "uint256"},
+          {"name": "concentrationX", "type": "uint256"},
+          {"name": "concentrationY", "type": "uint256"},
+          {"name": "fee", "type": "uint256"},
+          {"name": "protocolFee", "type": "uint256"},
+          {"name": "protocolFeeRecipient", "type": "address"}
+        ],
+        "name": "params",
+        "type": "tuple"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getAssets",
+    "outputs": [
+      {
+        "name": "asset0",
+        "type": "address"
+      },
+      {
+        "name": "asset1",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {"name": "tokenIn", "type": "address"},
+      {"name": "tokenOut", "type": "address"},
+      {"name": "amount", "type": "uint256"},
+      {"name": "exactIn", "type": "bool"}
+    ],
+    "name": "computeQuote",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {"name": "tokenIn", "type": "address"},
+      {"name": "tokenOut", "type": "address"}
+    ],
+    "name": "getLimits",
+    "outputs": [
+      {
+        "name": "limitIn",
+        "type": "uint256"
+      },
+      {
+        "name": "limitOut",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "token0",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "token1",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

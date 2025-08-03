@@ -1,0 +1,126 @@
+{
+  "network": {
+    "name": "Ethereum Mainnet",
+    "chain_id": 1,
+    "rpc_url": "https://eth-mainnet.g.alchemy.com/v2/YOUR_KEY",
+    "ws_url": "wss://mainnet.infura.io/ws/v3/YOUR_KEY",
+    "block_time": 12,
+    "explorer": "https://etherscan.io"
+  },
+  "pools": [
+    {
+      "name": "EulerSwap USDT/WETH",
+      "address": "0x55dcf9455eee8fd3f5eed17606291272cde428a8",
+      "token0": {
+        "symbol": "USDT",
+        "name": "Tether USD",
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "decimals": 6,
+        "vault": "0x313603FA690301b0CaeEf8069c065862f9162162"
+      },
+      "token1": {
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "decimals": 18,
+        "vault": "0xD8b27CF359b7D15710a5BE299AF6e7Bf904984C2"
+      },
+      "equilibrium": {
+        "reserve0": "1000000",
+        "reserve1": "500",
+        "price_ratio": 2000,
+        "concentration_x": 0.5,
+        "concentration_y": 0.5
+      },
+      "fees": {
+        "swap_fee": 0.003,
+        "protocol_fee": 0.0001
+      }
+    }
+  ],
+  "binance": {
+    "futures": {
+      "symbol": "ETHUSDT",
+      "contract_type": "PERPETUAL",
+      "min_trade_size": 0.001,
+      "tick_size": 0.1,
+      "funding_interval_hours": 8,
+      "base_funding_rate": 0.0001,
+      "max_leverage": 125
+    },
+    "api": {
+      "rest_base": "https://fapi.binance.com",
+      "ws_base": "wss://fstream.binance.com",
+      "testnet_rest": "https://testnet.binancefuture.com",
+      "testnet_ws": "wss://stream.binancefuture.com",
+      "rate_limits": {
+        "ip_per_minute": 2400,
+        "orders_per_minute": 1200,
+        "weight_per_minute": 6000
+      }
+    }
+  },
+  "risk_params": {
+    "hedge": {
+      "min_hedge_size_eth": 0.005,
+      "hedge_threshold_eth": 0.01,
+      "max_delta_exposure_eth": 0.5,
+      "hedge_cooldown_seconds": 30
+    },
+    "position": {
+      "max_position_size_eth": 100,
+      "max_position_value_usdt": 200000,
+      "min_balance_usdt": 1000,
+      "margin_call_threshold": 0.8
+    },
+    "slippage": {
+      "max_slippage_percent": 1.0,
+      "price_impact_warning": 0.5,
+      "emergency_slippage": 2.0
+    },
+    "desync": {
+      "warning_percent": 5,
+      "critical_percent": 10,
+      "auto_rebalance_threshold": 15
+    }
+  },
+  "monitoring": {
+    "intervals": {
+      "reserve_polling": 5,
+      "position_check": 10,
+      "funding_rate_check": 28800,
+      "health_check": 60
+    },
+    "alerts": {
+      "delta_warning": 0.02,
+      "delta_critical": 0.05,
+      "funding_rate_high": 0.0005,
+      "gas_price_high": 100,
+      "vault_utilization_high": 0.9
+    }
+  },
+  "gas": {
+    "max_price_gwei": 100,
+    "priority_fee_gwei": 2,
+    "gas_limit_buffer": 1.2,
+    "estimation_blocks": 3
+  },
+  "emergency": {
+    "stop_loss_usdt": 10000,
+    "max_drawdown_percent": 20,
+    "circuit_breaker": {
+      "max_trades_per_hour": 20,
+      "max_failed_trades": 3,
+      "cooldown_minutes": 30
+    }
+  },
+  "deployment": {
+    "deployed_at_block": 18800000,
+    "deployment_date": "2023-12-15",
+    "last_verified": "2024-01-15",
+    "audit_reports": [
+      "ChainSecurity_EulerSwap_audit.pdf",
+      "Cantina_EulerSwap_audit.pdf"
+    ]
+  }
+}

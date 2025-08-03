@@ -39,8 +39,8 @@ graph TB
         BIN[Binance<br/>Perpetuals]
     end
     
-    RPC -->|getReserves()| SM
-    EM <-->|API| BIN
+    RPC -->|"getReserves()"| SM
+    EM <-->|"API"| BIN
     
     style EP fill:#e1f5fe
     style BIN fill:#fff3e0
